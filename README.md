@@ -7,7 +7,7 @@ GDUT RC 9th robo_sim test
 A队底座为红色，B队为蓝绿色。A队机器人编号为1和2，B队为3和4.  
 编号为奇数的机器人顶上的杆子是有颜色的，偶数则都是灰色。  
 如何查看话题？  
-去对应的机器人model文件里面搜索tpic即可查到  
+去对应的机器人model文件里面搜索topic即可查到  
 一般来说除了速度控制话题是cmdx_vel,x换成机器人编号，其他都是直接在话题后面加编号。  
 参考教程：  
 [机器人操作系统 ROS 快速入门教程] (https://www.bilibili.com/video/BV1BP4y1o7pw/?share_source=copy_web&vd_source=2d9681237ef7d9ae6e0c4a3d85c9f569)  
