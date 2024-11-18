@@ -1,7 +1,7 @@
 # robot
 GDUT RC 9th robo_sim test  
 把文件拉取到~/catkin_ws/src即可  
-然后运行 `roslaunch robo_test.launch`
+然后运行 `roslaunch robo_test.launch`  
 机器人仿真环境，只做了四台机器人，并没有完全搭建完。  
 对应的控制及传感器话题已经写好，但是只验证了速度控制和imu话题。  
 场地大小按照规则标准搭建，机器人半径为46cm。  
