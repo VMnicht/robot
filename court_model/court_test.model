@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="court_test">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="4.56645632985183E-15 5.41233724504764E-16 0.0808506428269675"
+        rpy="0 0 0" />
+      <mass
+        value="56183.7951415133" />
+      <inertia
+        ixx="4344409.46348079"
+        ixy="-1.74053115163725E-09"
+        ixz="-4.78721161860805E-10"
+        iyy="1511485.13230703"
+        iyz="3656.27565265445"
+        izz="5849762.53827935" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://场地.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://场地.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

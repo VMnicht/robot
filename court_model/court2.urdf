@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="court2">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="4.3332820304616E-15 -1.59594559789866E-16 0.0191493571730312"
+        rpy="0 0 0" />
+      <mass
+        value="56183.7951415133" />
+      <inertia
+        ixx="4344409.46348079"
+        ixy="1.73352374875806E-09"
+        ixz="4.69912199728851E-10"
+        iyy="1511485.13230704"
+        iyz="3656.2756526544"
+        izz="5849762.53827935" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://court2/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="base">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://court2/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="1">
+    <inertial>
+      <origin
+        xyz="6.2625 -5.0323E-15 0.019149"
+        rpy="0 0 0" />
+      <mass
+        value="56184" />
+      <inertia
+        ixx="1513000"
+        ixy="-1.7495E-09"
+        ixz="-1.001E-09"
+        iyy="4355200"
+        iyz="-2.4984E-10"
+        izz="5859100" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://court2/meshes/1.STL" />
+      </geometry>
+      <material
+        name="1">
+        <color
+          rgba="1 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://court2/meshes/1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="1"
+    type="fixed">
+    <origin
+      xyz="0 -6.2625 0"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="2">
+    <inertial>
+      <origin
+        xyz="5.55376178089501 -1.34941049646065E-15 0.019149357173025"
+        rpy="0 0 0" />
+      <mass
+        value="56183.7951415134" />
+      <inertia
+        ixx="1512962.57154413"
+        ixy="-1.74229917005178E-09"
+        ixz="-9.6825303330661E-10"
+        iyy="4355180.76714378"
+        iyz="-2.87917047915371E-10"
+        izz="5859056.40270525" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://court2/meshes/2.STL" />
+      </geometry>
+      <material
+        name="2">
+        <color
+          rgba="1 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://court2/meshes/2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="2"
+    type="fixed">
+    <origin
+      xyz="0 -5.5538 0"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="3">
+    <inertial>
+      <origin
+        xyz="2.68843703753933 -1.2495094070493E-14 0.0191493571730286"
+        rpy="0 0 0" />
+      <mass
+        value="56183.7951415135" />
+      <inertia
+        ixx="1512962.57154413"
+        ixy="-1.76313765485453E-09"
+        ixz="-1.04833475234045E-09"
+        iyy="4355180.76714377"
+        iyz="-2.83758226654905E-10"
+        izz="5859056.40270524" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://court2/meshes/3.STL" />
+      </geometry>
+      <material
+        name="3">
+        <color
+          rgba="1 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://court2/meshes/3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="3"
+    type="fixed">
+    <origin
+      xyz="0 -2.6884 0"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="4">
+    <inertial>
+      <origin
+        xyz="-2.68843703753933 6.74119996177194E-16 0.019149357173025"
+        rpy="0 0 0" />
+      <mass
+        value="56183.7951415134" />
+      <inertia
+        ixx="1512962.57154413"
+        ixy="-1.76843901119316E-09"
+        ixz="-1.04877528883662E-09"
+        iyy="4355180.76714377"
+        iyz="-2.6702842202341E-10"
+        izz="5859056.40270524" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://court2/meshes/4.STL" />
+      </geometry>
+      <material
+        name="4">
+        <color
+          rgba="1 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://court2/meshes/4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="4"
+    type="fixed">
+    <origin
+      xyz="0 2.6884 0"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="4" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="5">
+    <inertial>
+      <origin
+        xyz="-5.55376178089501 -1.81545020430058E-14 0.0191493571730268"
+        rpy="0 0 0" />
+      <mass
+        value="56183.7951415135" />
+      <inertia
+        ixx="1512962.57154413"
+        ixy="-1.74423610523776E-09"
+        ixz="-1.03420205732618E-09"
+        iyy="4355180.76714377"
+        iyz="-2.89231471092312E-10"
+        izz="5859056.40270524" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://court2/meshes/5.STL" />
+      </geometry>
+      <material
+        name="5">
+        <color
+          rgba="1 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://court2/meshes/5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="5"
+    type="fixed">
+    <origin
+      xyz="0 5.5538 0"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="5" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="6">
+    <inertial>
+      <origin
+        xyz="-6.2625 -4.73040781787507E-15 0.019149357173025"
+        rpy="0 0 0" />
+      <mass
+        value="56183.7951415135" />
+      <inertia
+        ixx="1512962.57154413"
+        ixy="-1.75636546700825E-09"
+        ixz="-1.02695452142143E-09"
+        iyy="4355180.76714377"
+        iyz="-2.76365955460562E-10"
+        izz="5859056.40270525" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://court2/meshes/6.STL" />
+      </geometry>
+      <material
+        name="6">
+        <color
+          rgba="1 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://court2/meshes/6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="6"
+    type="fixed">
+    <origin
+      xyz="0 6.2625 0"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="6" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="7">
+    <inertial>
+      <origin
+        xyz="-1.83135483870968 -4.49385483870968 0.0191493571730277"
+        rpy="0 0 0" />
+      <mass
+        value="56183.7951415135" />
+      <inertia
+        ixx="1512962.57154413"
+        ixy="-1.76346974601302E-09"
+        ixz="-9.99651916799849E-10"
+        iyy="4355180.76714377"
+        iyz="-2.42615014150644E-10"
+        izz="5859056.40270524" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://court2/meshes/7.STL" />
+      </geometry>
+      <material
+        name="7">
+        <color
+          rgba="1 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://court2/meshes/7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="7"
+    type="fixed">
+    <origin
+      xyz="-4.4939 1.8314 0"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="7" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="8">
+    <inertial>
+      <origin
+        xyz="1.83135483870968 4.49385483870967 0.0191493571730295"
+        rpy="0 0 0" />
+      <mass
+        value="56183.7951415134" />
+      <inertia
+        ixx="1512962.57154413"
+        ixy="-1.77097873919428E-09"
+        ixz="-9.71898117541059E-10"
+        iyy="4355180.76714377"
+        iyz="-3.01814709769125E-10"
+        izz="5859056.40270524" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://court2/meshes/8.STL" />
+      </geometry>
+      <material
+        name="8">
+        <color
+          rgba="1.0 0.0 0.0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://court2/meshes/8.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="8"
+    type="fixed">
+    <origin
+      xyz="4.4939 -1.8314 0"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="8" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="9">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://court2/meshes/9.STL" />
+      </geometry>
+      <material
+        name="9">
+        <color
+          rgba="1 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://court2/meshes/9.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="9"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 1.5707963267949" />
+    <parent
+      link="base_link" />
+    <child
+      link="9" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
