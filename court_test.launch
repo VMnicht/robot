@@ -1,0 +1,29 @@
+<launch>
+
+    <!-- 启动 gazebo -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    </include>
+
+    <!-- 在 gazebo 中显示机器人模型 -->
+    <node name="court" pkg="gazebo_ros" type="spawn_model" 
+        args="-file $(find robot)/court_model/court2.urdf -urdf -model court2 
+                -x -0 -y -0 -z 0
+                -R 0 -P 3.14 -Y 0" />
+    <node name="robot1" pkg="gazebo_ros" type="spawn_model" 
+        args="-file $(find robot)/teamA/robo1.model -urdf -model robot1 
+                -x -0.5 -y -7 -z 0.5
+                -R 0 -P 0 -Y 1.57" />
+    <node name="robot2" pkg="gazebo_ros" type="spawn_model" 
+        args="-file $(find robot)/teamA/robo2.model -urdf -model robot2 
+                -x 0.5 -y -7 -z 0.5
+                -R 0 -P 0 -Y 1.57" />
+    <node name="robot3" pkg="gazebo_ros" type="spawn_model" 
+        args="-file $(find robot)/teamB/robo3.model -urdf -model robot3 
+                -x -0.5 -y 7 -z 0.5
+                -R 0 -P 0 -Y -1.57" />
+    <node name="robot4" pkg="gazebo_ros" type="spawn_model" 
+        args="-file $(find robot)/teamB/robo4.model -urdf -model robot4 
+                -x 0.5 -y 7 -z 0.5
+                -R 0 -P 0 -Y -1.57" />
+
+</launch>
