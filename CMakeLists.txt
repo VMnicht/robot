@@ -13,6 +13,19 @@ find_package(catkin REQUIRED COMPONENTS
   gazebo_ros_control
   urdf
   xacro
+  controller_manager
+  joint_state_controller
+  robot_state_publisher
+  roscpp
+  rospy
+  std_msgs
+  geometry_msgs
+  move_base_msgs 
+  actionlib
+  tf
+  cv_bridge 
+  image_transport
+  nav_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -206,3 +219,18 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+add_executable(keyboard_ctrl
+  control/keyboard_ctrl.cpp
+)
+add_dependencies(keyboard_ctrl ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(keyboard_ctrl
+  ${catkin_LIBRARIES}
+)
+
+add_executable(lidar_filter_
+  control/lidar_filter_.cpp
+)
+add_dependencies(lidar_filter_ ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(lidar_filter_
+  ${catkin_LIBRARIES}
+)
